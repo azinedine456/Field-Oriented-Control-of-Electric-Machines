@@ -24,6 +24,9 @@ fs=10000;
 Ts= 1/fs;
 E=700;
 
+%SVM parameters
+%off times permutation matrix
+Poff=[1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 ; 1 0 0 1 1 0 0 1 0 0 1 1 0 0 1 1 0 1; 1 1 0 0 1 0 0 1 1 0 0 1 1 0 1 1 0 0]';
 
 %% Current Controller
 
