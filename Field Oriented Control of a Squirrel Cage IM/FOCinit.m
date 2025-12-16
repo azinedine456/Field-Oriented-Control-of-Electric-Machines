@@ -40,7 +40,7 @@ Kpe = taue * Kie;                  % Proportional gain
 Kf=Msr;
 tauf=(Lr)/Rr;            
 t5f =100e-3;                         %5% settling time
-IP=1; % Using an IP controller instead of PI
+IP=0; % Using an IP controller instead of PI
 if IP
     wn=3/t5f; %   sin(ce wn*T5%=3 for a damping of 0.7 (Check Natural frequency vs. 5% settling nomogram)
     epsilon=0.7;
