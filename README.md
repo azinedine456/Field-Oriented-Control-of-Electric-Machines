@@ -30,6 +30,7 @@ The main elements of the control are:
 - Nested control loops: current loops → flux loop → speed loop.  
 - Compensation of cross-coupling terms in the dq equations.  
 - Complete Simulink implementation and testing of the control structure.
+- Space Vector Modulation.
 
 This project followed the labsheet "Commande vectorielle à flux rotorique orienté".
 
@@ -87,6 +88,7 @@ Based on the labsheet:
 ## Simulation Results 
 <img width="1919" height="920" alt="image" src="https://github.com/user-attachments/assets/5f11a1af-1686-470d-bc36-8e52e54588bd" />
 
+<img width="1919" height="893" alt="image" src="https://github.com/user-attachments/assets/73c29062-1760-4c09-808b-f2fb013843c1" />
 
 ---
 
