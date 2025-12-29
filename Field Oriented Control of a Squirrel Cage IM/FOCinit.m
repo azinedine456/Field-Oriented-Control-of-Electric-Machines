@@ -24,9 +24,20 @@ fs=10000;
 Ts= 1/fs;
 E=700;
 
+%Modulation index definition (ViN/((2/pi)*E))
+
 %SVM parameters
 %off times permutation matrix
 Poff=[1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 ; 1 0 0 1 1 0 0 1 0 0 1 1 0 0 1 1 0 1; 1 1 0 0 1 0 0 1 1 0 0 1 1 0 1 1 0 0]';
+
+% LC filter parameters (For visualizing the output voltage waveform in the SVMINVERTER.slx file
+wc=(fs*2*pi)/20; %cut-off 
+fc=wc/(2*pi)
+Lf=1e-3;
+Cf=1/(Lf*wc^2);
+eps=1; %No resonance
+Rf=(1/(2*eps))*sqrt(Lf/Cf);
+
 
 %% Current Controller
 
